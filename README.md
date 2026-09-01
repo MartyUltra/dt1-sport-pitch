@@ -1,15 +1,11 @@
-# Sport & T1D — Working brief
+# Sport & T1D — working brief (EN)
 
-English pitch site for diabetologist consultation.
-
-Static HTML brief on type 1 diabetes and sport coaching (scenario B: display / prediction / alerts on top of existing CGM; no dose recommendations).
+Static one-pager for an English-speaking diabetologist.
 
 ## Live
 
-Deployed on Vercel as `dt1-sport-pitch`.
+GitHub Pages (if enabled): https://martyultra.github.io/dt1-sport-pitch/
 
 ## Contents
 
-- `index.html` — main pitch page
-- `docs/index.html` — same page for GitHub Pages docs path
-- `.nojekyll` — disable Jekyll on GitHub Pages
+Problem · Personas (hypotheses) · Vision · Blockers · Competition · Scenarios · Ask
