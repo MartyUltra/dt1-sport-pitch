@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Sport &amp; DT1 — Document de travail</title>
+<title>Sport &amp; T1D — Working brief</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
@@ -36,131 +36,131 @@ footer{padding:2rem 0 3rem;color:var(--muted);font-size:.85rem}
 </head>
 <body>
 <nav><div class="wrap">
-  <strong>Sport &amp; DT1</strong>
+  <strong>Sport &amp; T1D</strong>
   <div class="links">
-    <a href="#probleme">Problème</a>
+    <a href="#problem">Problem</a>
     <a href="#personas">Personas</a>
     <a href="#vision">Vision</a>
-    <a href="#blocages">Blocages</a>
-    <a href="#concurrence">Concurrence</a>
-    <a href="#scenarios">Scénarios</a>
-    <a href="#demande">Demande</a>
+    <a href="#blockers">Blockers</a>
+    <a href="#competition">Competition</a>
+    <a href="#scenarios">Scenarios</a>
+    <a href="#ask">Ask</a>
   </div>
 </div></nav>
 
 <header class="hero"><div class="wrap">
-  <span class="badge">Document de travail · sept. 2026</span>
-  <h1>Sport &amp; DT1 — un logiciel au-dessus du CGM</h1>
-  <p class="lead">Aider les sportifs vivant avec un diabète de type 1 à anticiper glycémie × charge × stress — sans fabriquer de capteur, et sans recommander de dose d’insuline.</p>
-  <p><span class="badge warn">FAIT cabinet</span> &nbsp; Capteur maison écarté · scénario B (affichage / prédiction / alerte) · pas d’AID</p>
+  <span class="badge">Working brief · Sep 2026</span>
+  <h1>Sport &amp; T1D — software on top of existing CGM</h1>
+  <p class="lead">Help people with type 1 diabetes who train hard anticipate glucose × workload × stress — without building a sensor, and without recommending insulin doses.</p>
+  <p><span class="badge warn">FACT (desk research)</span> &nbsp; No in-house sensor · scenario B (display / prediction / alerts) · not an AID</p>
 </div></header>
 
-<section id="probleme"><div class="wrap">
-  <h2>Problématique</h2>
+<section id="problem"><div class="wrap">
+  <h2>Problem</h2>
   <div class="grid cols-2">
-    <div class="card"><h3>L’exercice en DT1 est médicalement difficile</h3>
+    <div class="card"><h3>Exercise in T1D is clinically hard</h3>
       <ul class="clean">
-        <li>Hypoglycémies pendant l’effort</li>
-        <li>Hypoglycémies nocturnes retardées (jusqu’à ~12 h après)</li>
-        <li>Réponse glycémique inverse selon aérobie vs anaérobie</li>
+        <li>Hypoglycaemia during activity</li>
+        <li>Delayed nocturnal hypos (up to ~12 hours after)</li>
+        <li>Opposite glucose responses in aerobic vs anaerobic work</li>
       </ul>
     </div>
-    <div class="card"><h3>Le marché « wellness glucose » exclut l’insuline</h3>
+    <div class="card"><h3>Consumer “glucose wellness” excludes insulin users</h3>
       <ul class="clean">
-        <li>Dexcom Stelo + Oura, Abbott Lingo : ciblent adultes <em>sans</em> insuline</li>
-        <li>Les AID (pompes) offrent au mieux un mode Exercise / Temp Target — pas un coaching sport riche</li>
-        <li>Niche orpheline côté produit grand public</li>
+        <li>Dexcom Stelo + Oura, Abbott Lingo: adults <em>not</em> on insulin</li>
+        <li>AID pumps at best offer Exercise / Temp Target modes — not rich sports coaching</li>
+        <li>Orphan niche on the consumer product side</li>
       </ul>
     </div>
   </div>
 </div></section>
 
 <section id="personas"><div class="wrap">
-  <h2>Personas <span class="badge hyp">Hypothèses de cadrage</span></h2>
-  <p style="color:var(--muted);margin-top:-.4rem">Entretiens terrain non encore réalisés — personas de travail, pas de validation.</p>
+  <h2>Personas <span class="badge hyp">Framing hypotheses</span></h2>
+  <p style="color:var(--muted);margin-top:-.4rem">Field interviews not yet done — working personas, not validated.</p>
   <div class="grid cols-3" style="margin-top:1rem">
-    <div class="card"><span class="tag hyp">Hypothèse</span><h3>Alex, 28 ans</h3><p>Trail / triathlon. CGM + pompe ou stylo. Peur des hypos d’effort et des hypos nocturnes post-séance. Veut anticiper, pas qu’une app « dose » à sa place.</p></div>
-    <div class="card"><span class="tag hyp">Hypothèse</span><h3>Samira, 35 ans</h3><p>Running club. Cherche des patterns glycémie × charge × stress. Refuse une boîte noire thérapeutique ; veut comprendre et discuter avec son diabétologue.</p></div>
-    <div class="card"><span class="tag hyp">Hypothèse</span><h3>Dr. Léa</h3><p>Diabétologue. Intérêt pour un support d’éducation / discussion d’effort — pas un système d’AID concurrent des pompes déjà prescrites.</p></div>
+    <div class="card"><span class="tag hyp">Hypothesis</span><h3>Alex, 28</h3><p>Trail / triathlon. CGM + pump or pens. Worried about exercise hypos and delayed night hypos. Wants anticipation — not an app that “doses” for them.</p></div>
+    <div class="card"><span class="tag hyp">Hypothesis</span><h3>Samira, 35</h3><p>Running club. Wants patterns across glucose × load × stress. Rejects a therapeutic black box; wants to understand and discuss with their diabetologist.</p></div>
+    <div class="card"><span class="tag hyp">Hypothesis</span><h3>Dr. Lea</h3><p>Diabetologist. Interested in an education / exercise-discussion aid — not another AID competing with prescribed pumps.</p></div>
   </div>
 </div></section>
 
 <section id="vision"><div class="wrap">
-  <h2>Vision produit</h2>
+  <h2>Product vision</h2>
   <div class="card">
     <ul class="clean">
-      <li><strong>Au-dessus</strong> des CGM / AID déjà prescrits (Dexcom, Libre, Control-IQ, Omnipod 5…)</li>
-      <li>Agrégation glycémie + récupération + stress (wearables)</li>
-      <li>Insights, tendances, alertes d’information — <strong>sans recommandation de dose</strong></li>
-      <li><strong>Pas</strong> de fabrication de capteur (marché verrouillé ; Diabeloop montre que même le soft AID est fragile)</li>
+      <li><strong>On top of</strong> already prescribed CGM / AID (Dexcom, Libre, Control-IQ, Omnipod 5…)</li>
+      <li>Aggregate glucose + recovery + stress (wearables)</li>
+      <li>Insights, trends, informational alerts — <strong>no dose recommendations</strong></li>
+      <li><strong>No</strong> sensor manufacturing (locked market; Diabeloop shows even software AID is commercially fragile)</li>
     </ul>
   </div>
 </div></section>
 
-<section id="blocages"><div class="wrap">
-  <h2>Points bloquants <span class="badge warn">Faits cabinet</span></h2>
+<section id="blockers"><div class="wrap">
+  <h2>Blockers <span class="badge warn">Desk-research facts</span></h2>
   <div class="grid cols-2">
-    <div class="card"><h3>Accès aux données</h3>
+    <div class="card"><h3>Data access</h3>
       <ul class="clean">
-        <li>API Dexcom cloud : EGV rétrospective (~1 h US / ~3 h OUS) — décisions TR interdites (FAQ)</li>
-        <li><strong>DLA</strong> (Data Licensing Agreement) non public = gate prod</li>
-        <li>Abbott Libre : pas d’API publique — partenariat commercial</li>
-        <li>HealthKit = chemin technique (push G6/G7) ≠ feu vert coaching DT1</li>
-        <li>Agrégateurs (BYOO) n’enlèvent pas le retard Dexcom</li>
+        <li>Dexcom cloud API: retrospective EGV (~1 h US / ~3 h OUS) — real-time treatment decisions not allowed (FAQ)</li>
+        <li><strong>DLA</strong> (Data Licensing Agreement) is not public = production gate</li>
+        <li>Abbott Libre: no public developer API — commercial partnership</li>
+        <li>HealthKit = technical path (G6/G7 push) ≠ green light for T1D coaching</li>
+        <li>Aggregators (BYOO) do not remove Dexcom’s delay</li>
       </ul>
     </div>
-    <div class="card"><h3>Réglementaire &amp; payeur</h3>
+    <div class="card"><h3>Regulatory &amp; payer (France lens)</h3>
       <ul class="clean">
-        <li>App seule → <strong>MDR MDSW</strong> (pas IVDR)</li>
-        <li>Sans reco dose : dual-track IIa (hypothèse) + IIb à budgéter ; organisme notifié ≥ IIa</li>
-        <li>AI Act (DM) : obligations → <strong>2 août 2028</strong></li>
-        <li>Logiciel sport hors LPP jour → payeur court terme = <strong>B2C</strong></li>
-        <li>Ne pas caler le pricing SaaS sur les forfaits matériel LPP</li>
+        <li>App alone → <strong>MDR MDSW</strong> (not IVDR)</li>
+        <li>Without dose advice: dual-track IIa (hypothesis) + IIb to budget; notified body ≥ IIa</li>
+        <li>AI Act (medical devices): obligations from <strong>2 Aug 2028</strong></li>
+        <li>Sports software outside day LPP codes → near-term payer = <strong>B2C</strong></li>
+        <li>Do not price SaaS off hardware LPP tariffs</li>
       </ul>
     </div>
   </div>
 </div></section>
 
-<section id="concurrence"><div class="wrap">
-  <h2>Concurrence — France &amp; international</h2>
+<section id="competition"><div class="wrap">
+  <h2>Competition — France &amp; international</h2>
   <table>
-    <thead><tr><th>Zone</th><th>Acteurs</th><th>Lecture</th></tr></thead>
+    <thead><tr><th>Region</th><th>Players</th><th>Read</th></tr></thead>
     <tbody>
-      <tr><td><strong>France / EU</strong></td><td>Diabeloop (AID) ; CamAPS / Ypsomed ; mySugr (Roche)</td><td>Diabeloop en <strong>sauvegarde</strong>, observation jusqu’au <strong>13 oct. 2026</strong> — CE/FDA ≠ business model</td></tr>
-      <tr><td><strong>AID intl</strong></td><td>Tandem Control-IQ, Omnipod 5, MiniMed 780G, Beta Bionics iLet</td><td>Mode Exercise / Temp Target au mieux — peu de coaching sport riche</td></tr>
-      <tr><td><strong>Wellness</strong></td><td>Stelo + Oura, Abbott Lingo, Levels / Signos / Nutrisense</td><td>Excluent typiquement les utilisateurs d’insuline</td></tr>
-      <tr><td><strong>Cimetière</strong></td><td>Supersapiens ; Pear Therapeutics ; Voluntis → Aptar</td><td>Sport+CGM exclusif, remboursement DTx, exit DTx standalone</td></tr>
+      <tr><td><strong>France / EU</strong></td><td>Diabeloop (AID); CamAPS / Ypsomed; mySugr (Roche)</td><td>Diabeloop in <strong>safeguard</strong> proceedings, observation to <strong>13 Oct 2026</strong> — CE/FDA ≠ business model</td></tr>
+      <tr><td><strong>AID intl</strong></td><td>Tandem Control-IQ, Omnipod 5, MiniMed 780G, Beta Bionics iLet</td><td>Exercise / Temp Target at best — little rich sports coaching</td></tr>
+      <tr><td><strong>Wellness</strong></td><td>Stelo + Oura, Abbott Lingo, Levels / Signos / Nutrisense</td><td>Typically exclude insulin users</td></tr>
+      <tr><td><strong>Cemetery</strong></td><td>Supersapiens; Pear Therapeutics; Voluntis → Aptar</td><td>Sport+exclusive CGM, DTx reimbursement, standalone DTx exit</td></tr>
     </tbody>
   </table>
-  <p style="color:var(--muted);font-size:.9rem;margin-top:.8rem">Whoop sans CGM natif : non confirmé sur source primaire — pas un white space stratégique affirmé.</p>
+  <p style="color:var(--muted);font-size:.9rem;margin-top:.8rem">Whoop native CGM: not confirmed on primary sources — not asserted as strategic whitespace.</p>
 </div></section>
 
 <section id="scenarios"><div class="wrap">
-  <h2>Prévisions / scénarios <span class="badge hyp">Hypothèses uniquement</span></h2>
-  <p style="color:var(--muted)">Aucun TAM / SAM / CAGR inventé. Scénarios dérivés du paysage concurrentiel.</p>
+  <h2>Forecasts / scenarios <span class="badge hyp">Hypotheses only</span></h2>
+  <p style="color:var(--muted)">No invented TAM / SAM / CAGR. Scenarios inferred from the competitive landscape.</p>
   <div class="grid cols-2" style="margin-top:1rem">
-    <div class="card"><span class="tag hyp">Hypothèse</span><h3>Espace ouvert</h3><p>Si le wellness reste fermé aux insulinés et que les AID restent limités au mode Exercise, un coaching sport DT1 « soft » (sans dose) peut trouver une audience — à valider par entretiens.</p></div>
-    <div class="card"><span class="tag hyp">Hypothèse</span><h3>Pression algo</h3><p>Issue Diabeloop (13/10/2026) + partenariats type Sequel 2027 peuvent recomposer l’offre AID FR/US — surveiller, ne pas dépendre d’un seul hardware.</p></div>
-    <div class="card"><span class="tag hyp">Hypothèse</span><h3>Gate data</h3><p>Si DLA Dexcom / partenariat Abbott ferment le scénario B cloud → repli HealthKit on-device ou pause.</p></div>
-    <div class="card"><span class="tag hyp">Hypothèse</span><h3>Payeur</h3><p>Court terme B2C ; TLS/LPP seulement si bénéfice clinique démontré et claims médicaux tenables — long, pas le go initial.</p></div>
+    <div class="card"><span class="tag hyp">Hypothesis</span><h3>Open space</h3><p>If wellness stays closed to insulin users and AID stays limited to Exercise modes, soft T1D sports coaching (no dosing) may find an audience — to validate with interviews.</p></div>
+    <div class="card"><span class="tag hyp">Hypothesis</span><h3>Algorithm pressure</h3><p>Diabeloop’s outcome (13 Oct 2026) plus partnerships like Sequel 2027 may reshuffle FR/US AID supply — watch, don’t depend on one hardware stack.</p></div>
+    <div class="card"><span class="tag hyp">Hypothesis</span><h3>Data gate</h3><p>If Dexcom DLA / Abbott partnerships block cloud scenario B → fall back to on-device HealthKit or pause.</p></div>
+    <div class="card"><span class="tag hyp">Hypothesis</span><h3>Payer</h3><p>Near term B2C; TLS/LPP only if clinical benefit and medical claims hold — long path, not the initial go.</p></div>
   </div>
 </div></section>
 
-<section id="demande"><div class="wrap">
-  <h2>Ce que nous demandons</h2>
+<section id="ask"><div class="wrap">
+  <h2>What we’re asking</h2>
   <div class="callout">
     <ul class="ask">
-      <li>Votre lecture clinique de la problématique (effort / hypos retardées / aéro vs anaérobie)</li>
-      <li>Priorisation des use cases utiles en consultation</li>
-      <li>Éventuelles introductions patients / PSAD pour entretiens</li>
-      <li>Points de vigilance sur le positionnement « alerte sans reco de dose »</li>
+      <li>Your clinical read of the problem (exercise / delayed hypos / aerobic vs anaerobic)</li>
+      <li>Prioritisation of use cases that matter in clinic</li>
+      <li>Possible introductions to patients / home-care providers for interviews</li>
+      <li>Red flags on an “alert without dose advice” positioning</li>
     </ul>
   </div>
-  <p style="margin-top:1.2rem"><strong>Décision cabinet recommandée :</strong> go exploratoire cadrée (scénario B + B2C) — pas un go-to-market ni un marquage CE.</p>
+  <p style="margin-top:1.2rem"><strong>Internal recommendation:</strong> bounded exploratory go (scenario B + B2C) — not a go-to-market and not a CE marking plan.</p>
 </div></section>
 
 <footer><div class="wrap">
-  Ne constitue pas un avis médical, réglementaire ou d’investissement. Sources : cabinet agents (Accès, Réglementaire, Marché, Concurrence) — 1er sept. 2026. Personas et scénarios = hypothèses.
+  Not medical, regulatory, or investment advice. Sources: desk research agents (Access, Regulatory, Market, Competition) — 1 Sep 2026. Personas and scenarios are hypotheses.
 </div></footer>
 </body>
 </html>
