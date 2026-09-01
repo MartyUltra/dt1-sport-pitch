@@ -1,11 +1,5 @@
 # Sport & T1D — working brief (EN)
 
-Static one-pager for an English-speaking diabetologist.
+Includes Soft Armor Band accessory concept (dark premium).
 
-## Live
-
-GitHub Pages (if enabled): https://martyultra.github.io/dt1-sport-pitch/
-
-## Contents
-
-Problem · Personas (hypotheses) · Vision · Blockers · Competition · Scenarios · Ask
+Live: https://dt1-sport-pitch.vercel.app/
